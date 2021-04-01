@@ -1,0 +1,34 @@
+##################################
+#     HRDISCORD         v1.0     #
+#     kqrmo     @ hiveram.eu     #
+##################################
+
+# You can get your webhook url by selecting on which channel you want the messages to be sent
+# Channel settings -> Integrations -> Webhooks (Create New) -> "Copy Webhook URL"
+WebhookURL: ""
+
+Settings:
+  Username: "Server Event"
+  Avatar: ""
+  MentionEveryone: true
+  Colors:
+    ServerStart: "#34eb46"
+    ServerStop: "#eb4034"
+    PlayerJoin: "#34eb46"
+    PlayerLeave: "#eb4034"
+    PlayerDeath: "#a89732"
+    Support: "#ffffff"
+  Events:
+    ServerStart: ":white_check_mark: Server käivitatud!"
+    ServerStop: ":x: Server peatatud!"
+    PlayerJoin: "{player} liitus serveriga!"
+    PlayerLeave: "{player} lahkus serverist!"
+
+Messages:
+  CommandUsage: "&c> &7Command usage: &f/hrd [reload]"
+  NoPermissions: "&c> &7You don't have permissions to perform this command."
+  DiscordInvite: "&a> &7Join our discord server - discord.gg/xxxx"
+  ReloadSuccessful: "&a> &7Successfully reloaded hrDiscord config file!"
+  MessageMissing: "&c> &7Please enter your message!"
+  MessageSent: "&a> &7Your message is successfully sent!"
+  StaffMessage: "&c>>> &8(&f{player}&8) &c- &f{message}"
