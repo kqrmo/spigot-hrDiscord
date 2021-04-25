@@ -24,6 +24,16 @@ Settings:
     PlayerJoin: "{player} liitus serveriga!"
     PlayerLeave: "{player} lahkus serverist!"
 
+Votifier:
+  Enabled: true
+  VoteChannel: ""
+  VoteMessage: "{player} voted for server!"
+
+LiteBans:
+  Enabled: true
+  PunishmentsChannel: ""
+
+
 Messages:
   CommandUsage: "&c> &7Command usage: &f/hrd [reload]"
   NoPermissions: "&c> &7You don't have permissions to perform this command."

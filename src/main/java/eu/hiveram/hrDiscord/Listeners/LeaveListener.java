@@ -3,6 +3,7 @@ package eu.hiveram.hrDiscord.Listeners;
 import eu.hiveram.hrDiscord.ConfigManager;
 import eu.hiveram.hrDiscord.Webhook;
 import eu.hiveram.hrDiscord.hrDiscord;
+import litebans.api.Entry;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.EventHandler;
@@ -10,6 +11,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 import java.io.IOException;
+import litebans.api.*;
 
 public class LeaveListener implements Listener {
     FileConfiguration configFile = ConfigManager.getInstance().getConfig("config.yml");
@@ -17,6 +19,7 @@ public class LeaveListener implements Listener {
 
     @EventHandler
     public void onPlayerQuit(PlayerQuitEvent event) {
+
         String leaveFormat = ConfigManager.getInstance().getStringRaw(configFile, "Settings.Events.PlayerLeave")
                 .replace("{player}", event.getPlayer().getName());
         wh.setUsername(ConfigManager.getInstance().getStringRaw(configFile, "Settings.Username"));

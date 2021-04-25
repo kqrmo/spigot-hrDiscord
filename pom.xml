@@ -18,6 +18,14 @@
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
+        <repository>
+            <id>bintray-repo</id>
+            <url>https://dl.bintray.com/ichbinjoe/public/</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -25,6 +33,18 @@
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>1.16.4-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.vexsoftware</groupId>
+            <artifactId>nuvotifier-universal</artifactId>
+            <version>2.6.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.gitlab.ruany</groupId>
+            <artifactId>LiteBansAPI</artifactId>
+            <version>0.3.4</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
